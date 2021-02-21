@@ -109,3 +109,15 @@ spam = 'cat'
 if spam in ('cat', 'dog', 'moose'):
     spam = 'meow!'
 print(spam)
+
+
+# 10 - pay attention to the difference between == and is
+#      == - compares values
+#      is - compares references
+spam = {'name': 'Pedro'}
+eggs = spam
+spam is eggs  # True - reference is the same
+spam == eggs  # True - value is the same
+bacon = {'name': 'Pedro'}
+spam == bacon  # True - value is the same
+spam is bacon  # false - reference is different!
